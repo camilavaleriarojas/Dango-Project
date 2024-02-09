@@ -1,5 +1,5 @@
-import Header from "../Header";
-import Card from "../Card";
+import Header from "../../Components/Header";
+import Card from "../../Components/Card";
 import { dataProducts } from "../../data/dataProducts";
 
 const Layout = () => {

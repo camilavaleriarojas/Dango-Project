@@ -1,10 +1,10 @@
-import Layout from "./Components/Layout";
-import { TitleSizeProvider } from "./Components/TitleContext/index";
+import Layout from "./routes/Layout";
+import { ContextProvider } from "./context/index";
 
 export default function App() {
   return (
-    <TitleSizeProvider>
+    <ContextProvider>
       <Layout />
-    </TitleSizeProvider>
+    </ContextProvider>
   );
 }

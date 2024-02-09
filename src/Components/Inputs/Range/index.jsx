@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { TitleSizeContext } from "../TitleContext";
+import { Context } from "../../../context";
 
 const Range = () => {
-  const { setTitleSize } = useContext(TitleSizeContext);
+  const { setTitleSize } = useContext(Context);
 
   const handleRangeChange = (event) => {
     let fontSizeValue;
