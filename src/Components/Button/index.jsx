@@ -1,7 +1,7 @@
 const AddButton = () => {
   return (
     <>
-      <button className=" bg-light-pink text-sm hover:bg-dark-pink w-36 h-9 border border-gray-300">
+      <button className=" h-9 w-full border border-gray-300   bg-stone-300 text-sm hover:bg-dark-pink">
         Add to cart
       </button>
     </>
