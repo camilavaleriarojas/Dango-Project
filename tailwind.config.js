@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "light-pink": "#E6D7E1",
-        "dark-pink": "#E1C9D9",
+        light: "#343a40",
+        dark: "#212529",
       },
       fontFamily: {
-        sans: ["Raleway", "san-serif"],
+        sans: ["Nunito sans", "san-serif"],
       },
     },
   },

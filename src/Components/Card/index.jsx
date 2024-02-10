@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { BiSolidEdit } from "react-icons/bi";
 import { useContext } from "react";
-import { Context } from "../../context";
+import { Context } from "../../context/index";
 import InputCuantity from "../Inputs/InputCuantity";
 
 import AddButton from "../Button";
@@ -12,7 +12,6 @@ const Card = ({ name, image, price, description }) => {
   const [title, setTitle] = useState(name);
   const [isEditing, setIsEditing] = useState(name);
   const [cuantityValue, setCuantityValue] = useState(1);
-
   const { titleSize, setAmount } = useContext(Context);
 
   const onTitleChange = (event) => {
@@ -30,7 +29,7 @@ const Card = ({ name, image, price, description }) => {
   };
 
   return (
-    <div className="borde relative w-56 rounded-md border-stone-100 bg-white p-4 pt-2 shadow-md hover:border-stone-300 ">
+    <div className="w-56 rounded-sm border-stone-100 bg-white p-4 pt-2 shadow-md">
       <div className={"mb-1 flex items-center justify-between"}>
         <div className={!isEditing ? "visible w-full" : "invisible w-full"}>
           <TitleInput title={title} onTitleChange={onTitleChange} />
@@ -39,13 +38,15 @@ const Card = ({ name, image, price, description }) => {
           {isEditing ? <BiSolidEdit /> : <FaCheck />}
         </button>
       </div>
-      <div className="">
+      <div>
         <img
           src={image}
           alt="soap"
           className="rounded-xs opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
-        <h2 className={`mt-5 overflow-hidden font-bold ${titleSize}`}>
+        <h2
+          className={`mt-5 overflow-hidden break-words font-bold ${titleSize}`}
+        >
           {title}
         </h2>
         <div className="flex py-3">

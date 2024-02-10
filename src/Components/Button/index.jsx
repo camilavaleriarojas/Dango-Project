@@ -2,7 +2,7 @@ const AddButton = ({ onClick }) => {
   return (
     <>
       <button
-        className=" h-9 w-full border border-gray-300   bg-stone-300 text-sm hover:bg-dark-pink"
+        className="bg-dark h-8 w-full border-gray-300 text-sm text-white hover:bg-stone-900"
         onClick={onClick}
       >
         Add to cart

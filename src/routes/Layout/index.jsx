@@ -7,7 +7,7 @@ const Layout = () => {
     <div className="bg-stone-100">
       <Header />
       <div className="flex flex-wrap items-center justify-center p-6">
-        <div className="p- grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {dataProducts.map((product) => (
             <Card
               key={product.id}
