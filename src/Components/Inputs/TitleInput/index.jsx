@@ -1,7 +1,7 @@
 const TitleInput = ({ onTitleChange }) => {
   return (
     <input
-      className="text-xs outline-none"
+      className="w-full text-xs outline-none"
       placeholder="Edit text title"
       onChange={onTitleChange}
       maxLength={40}

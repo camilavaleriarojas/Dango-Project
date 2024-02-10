@@ -41,7 +41,7 @@ const Card = ({ name, image, price, description }) => {
       <div>
         <img
           src={image}
-          alt="soap"
+          alt={title}
           className="rounded-xs opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100"
         />
         <h2
