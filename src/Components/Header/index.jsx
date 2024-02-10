@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="bg-light sticky top-0 z-50 mb-5 flex h-16 items-center justify-between px-5">
       <div className="flex items-center">
-        <img src="src/assets/soap.png" alt="soap" className="mx-2" />
+        <img src="/assets/soap.png" alt="soap" className="mx-2" />
         <h1 className="text-xl text-white">Tourmaline</h1>
       </div>
       <div className="flex">

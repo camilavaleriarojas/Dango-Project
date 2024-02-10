@@ -5,7 +5,7 @@ export const dataProducts = [
     price: 14,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/eucalyptus.jpeg",
+    image: "/assets/eucalyptus.jpeg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const dataProducts = [
     price: 12,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/argan.jpeg",
+    image: "/assets/argan.jpeg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const dataProducts = [
     price: 10,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/tea.jpeg",
+    image: "/assets/tea.jpeg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const dataProducts = [
     price: 12,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/unscented.jpeg",
+    image: "/assets/unscented.jpeg",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const dataProducts = [
     price: 11,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/watermelon.jpeg",
+    image: "/assets/watermelon.jpeg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const dataProducts = [
     price: 9,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/coconut.jpeg",
+    image: "/assets/coconut.jpeg",
   },
   {
     id: 7,
@@ -53,6 +53,6 @@ export const dataProducts = [
     price: 15,
     description:
       "Recharge your skin with the super energizing power of finely crushed tourmaline powder blended with natural complexion.",
-    image: "src/assets/vanilla.jpeg",
+    image: "/assets/vanilla.jpeg",
   },
 ];

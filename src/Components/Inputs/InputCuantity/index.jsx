@@ -7,6 +7,9 @@ const InputCuantity = ({ value, onChange }) => {
       min={1}
       defaultValue={1}
       className="w-10 border"
+      onKeyDown={(event) => {
+        event.preventDefault();
+      }}
     />
   );
 };
