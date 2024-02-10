@@ -4,6 +4,7 @@ import { BiSolidEdit } from "react-icons/bi";
 import { useContext } from "react";
 import { Context } from "../../context/index";
 import InputCuantity from "../Inputs/InputCuantity";
+import { Tooltip } from "react-tooltip";
 
 import AddButton from "../Button";
 import TitleInput from "../Inputs/TitleInput";
@@ -29,13 +30,20 @@ const Card = ({ name, image, price, description }) => {
   };
 
   return (
-    <div className="w-56 rounded-sm border-stone-100 bg-white p-4 pt-2 shadow-md">
+    <div className="w-65 rounded-sm border-stone-100 bg-white p-4 pt-2 shadow-md sm:w-56">
       <div className={"mb-1 flex items-center justify-between"}>
         <div className={!isEditing ? "visible w-full" : "invisible w-full"}>
           <TitleInput title={title} onTitleChange={onTitleChange} />
         </div>
         <button onClick={() => setIsEditing(!isEditing)}>
-          {isEditing ? <BiSolidEdit /> : <FaCheck />}
+          {isEditing ? (
+            <BiSolidEdit
+              data-tooltip-id="edit-tooltip"
+              data-tooltip-content="Click to edit title"
+            />
+          ) : (
+            <FaCheck />
+          )}
         </button>
       </div>
       <div>
@@ -62,6 +70,7 @@ const Card = ({ name, image, price, description }) => {
         <AddButton onClick={handleAddToCart} />
         <a className="cursor-pointer pt-2.5 text-sm underline">Learn More</a>
       </div>
+      <Tooltip id="edit-tooltip" />
     </div>
   );
 };

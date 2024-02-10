@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Context } from "../../../context/index";
+import { Tooltip } from "react-tooltip";
 
 const Range = () => {
   const { setTitleSize } = useContext(Context);
@@ -27,7 +28,7 @@ const Range = () => {
   };
 
   return (
-    <div className="accent-light flex h-7 items-center justify-center rounded-lg bg-white p-1">
+    <div className="flex h-7 items-center justify-center rounded-lg bg-white p-1 accent-light">
       <input
         type="range"
         min={5}
@@ -35,7 +36,11 @@ const Range = () => {
         step={5}
         onChange={handleRangeChange}
         className="h-1 w-16 cursor-pointer appearance-none rounded-full border-transparent bg-gray-400"
+        data-tooltip-id="range-tooltip"
+        data-tooltip-content="Edit size title"
+        data-tooltip-place="bottom"
       />
+      <Tooltip id="range-tooltip" />
     </div>
   );
 };
